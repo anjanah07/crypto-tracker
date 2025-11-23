@@ -76,6 +76,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -145,6 +148,8 @@ importers:
       typescript-eslint:
         specifier: ^8.46.3
         version: 8.46.3(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.2)
+
+  packages/shared: {}
 
   packages/typescript-config: {}
 

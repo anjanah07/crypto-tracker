@@ -1,3 +1,4 @@
+import { formatPrice } from "@repo/shared";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-50 p-8">
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="mt-4 p-4 bg-crypto-accent text-white rounded-lg">
         Styled with shared Tailwind!
       </div>
+      <p className="text-lg">Sample BTC: {formatPrice(50000)}</p>
     </main>
   );
 }
